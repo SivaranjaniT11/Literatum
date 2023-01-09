@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.banner{
+    background: url('image/bg-banner.png');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(48, 47, 47);
+    opacity: 0.3;
+}
+
+header{
+    width: 100%;
+    height:13vh;
+}
+.home a:hover{
+    text-decoration: underline;
+}
+header .logo-2 img{
+display: none;
+}
+
+.row-1 .image-1{
+    position: relative;
+    overflow: hidden;
+}
+.row-1 .image-1 .img-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3a3535;
+    opacity: 0.5;
+}
+.row-1 .image-1:hover img{
+   transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.text {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 25%;
+    left:5%;
+}
+.text p{
+    font-size:15px;
+}
+.home h1{
+    font-size: 60px; color: white;
+}
+
+@media (max-width: 576px) {
+header{
+    display: inline-flex;
+}
+    header .logo img{
+       display: none;
+    }
+    header .para-1{
+        display: none;
+    }
+    header .link-1{
+        display: none;
+    }
+    header .logo-2 img{
+        display: block;
+        width:20%;
+        margin-right:70%;
+        }
+        .icon-2 a , .icon-2 p{
+            display: none;
+        }
+        
+        .home .Files{
+            font-size: 10px;
+        }
+        .home h1{
+            font-size:25px;
+        }
+        .banner{
+            background: url('image/bg-banner.png');
+            width: 100%;
+            height: 150vh;
+        }
+        .home p , .home h3{
+            font-size:16px;
+        }
+
+}
